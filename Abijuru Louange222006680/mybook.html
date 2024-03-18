@@ -1,0 +1,214 @@
+<html>
+<head>
+    <title>My Book</title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<body bgcolor="sky blue">
+   <p>
+    	<center>
+    	<ul style="list-style-type: none;  padding: 0;">
+        <li style="display: inline;  margin-right: 10px"><a href="./home.html" 
+
+        	style="padding: 10px;color: white;background-color: hotpink;text-decoration: none;margin-right: 15px;">HOME</a></li>
+        <li style="display: inline;  margin-right: 10px"><a href="./about.html" 
+
+        	style="padding: 10px;color: white;background-color: hotpink;text-decoration: none;margin-right: 15px;">ABOUT</a></li>
+        <li style="display: inline;  margin-right: 10px"><a href="./contact.html" 
+        	style="padding: 10px;color: white;background-color: hotpink;text-decoration: none;margin-right: 15px;">CONTACT</a></li>
+        <li style="display: inline;  margin-right: 10px"><a href="./service.html" 
+        	style="padding: 10px;color: white;background-color: hotpink;text-decoration: none;margin-right: 15px;">SERVICES</a></li>
+        <li style="display: inline;  margin-right: 10px"><a href="./form.html" 
+        	style="padding: 10px;color: white;background-color: hotpink;text-decoration: none;margin-right: 15px;">FORM</a></li>
+        
+        <li style="display: inline;  margin-right: 10px"><a href="./table.html" 
+            style="padding: 10px;color: white;background-color: hotpink;text-decoration: none;margin-right: 15px;">TABLE</a></li>
+        
+        <li style="display: inline;  margin-right: 10px"><a href="./mybook.html" 
+        	style="padding: 10px;color: white;background-color: hotpink;text-decoration: none;margin-right: 15px;">MYBOOK</a></li>
+    </ul></center>
+	</p><ul>
+    <h1>DATABASE AND JAVA WITH ONLINE REAL ESTATE COMMISSION</h1>
+    <ol><h2><u><li>DATABASE</li></u></h2>
+        <p>Database name used: <b>online real estate commission</b></p>
+        <ul type="square"><h3><u><i><li>Tables</li></i></u></h3>
+
+            <ol><li><b>1.Admin Table</b></li>
+
+            <p>Admin table database structure This is table is table that will be only created by admin and will hold other system users apart from admin  will give them email and password that they will use to login and access the project or system, and also t used to register if she/he’s don’t have an account so once you must to create account in order to login and access or use the system.
+            Note: the created Admin will not have same ability and right in the system</p></br>
+
+            <li><b>2.Real esate agent table</b></li>
+
+            <p>Real estate agent table is a structure that gives information about the agents who will serve clients who wants to rent houses online which includes agentID, names, phone, email, etc.</p> </br>
+
+
+            <li><b>3.User table </b></li>
+
+            <p>user table  database structure This table Stores details or information about the users including userid,username,phone,gender etc.</p></br>
+
+            <li><b>4.Transaction table </b></li>
+
+            <p>transaction table database structure This table stores information about transactions including transactionid,userid,propertyid,date etc</p></br>
+
+            <li><b>5.Payments table </b></li>
+
+            <p>payments table  database structure This table Stores information about payments  including paymentid, transactionid,date,amount, etc. </p></br>
+
+            <li><b>6.Property table </b></li></ol>
+
+            <p>property table database structure This table Stores details about our properties, including propertyid,address, type and price. </p></br>
+
+           
+
+           <h3><u><i><li>Attributes</li></i></u></h3>
+           <b>Attributes of Admin Table</b></br>
+    Here are the descriptions or purposes of the attributes/columns used in Admin table:</br>
+
+    <p><b><i>fname, lname:</i></b> The columns which are represents first name and last name of user.</br></p> 
+
+    <p><b><i>phone:</i></b> The column which are represents telephone number of user.</br></p>
+
+    <p><b><i>gender:</i></b> The column which are represents or store gender of user like female and male.</br></p> 
+
+    <p><b><i>martial_status:</i></b> The column which are represents  martial status of user like single,married,divorced,…..</br></p>  
+
+    <p><b><i>DoB:</i></b> The column which are represents Date of Birth of user.</br></p>
+
+    <p><b><i>Email:</i></b> The column which are represents Email of given user.</br></p>
+
+    <p><b><i>Password:</i></b> The column which are represents  password of the user.</br></p>
+
+
+                    <b>Attributes of Real estates agent Table</b></br>
+
+    Here are the descriptions or purposes of the attributes/columns used in real estates agent table:</br>
+
+
+<p><b><i>userid:</i></b> The column which are represents  id of user which is unique value called PRIMARY.  It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of real estates agent table.</br></p>
+
+<p><b><i>username:</i></b> The column which  represents  the name of the user.</p></br>
+
+<p><b><i>phone:</i></b> The column which represents  the phone number of the user.</br></p>
+
+<p><b><i>gender:</i></b> The columns which represents  the gender of the user.</br></p>
+
+<p><b><i>email:</i></b> The columns which represents  the email of the user.</br></p>
+
+
+                    <b>Attributes of transaction Table</b></br>
+
+                    Here are the descriptions or purposes of the attributes/columns used in transaction table:</br>
+
+
+
+<p><b><i>transactionid:</i></b> The column which are represents  id of the transaction which is unique value called PRIMARY KEY. It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of transaction table.</p></br>
+
+<p><b><i>userid:</i></b> The column which are represents  id of user which  is references to the user  table value called FOREIGN KEY.  It is a column of user table  which has relationship between transaction table.</p></br>
+
+<p><b><i>propertyid:</i></b> The column which are represents  id of property which  is references to the property  table value called FOREIGN KEY.  It is a column of user table  which has relationship between transaction table.</p></br>
+
+
+<p><b><i>date:</i></b> The column which are represents date of transaction.</p></br>
+
+
+<p><b><i>amount:</i></b> The column which are represents the amount of the transaction.</p></br>
+
+
+
+
+                    <b>Attributes of user Table</b></br>
+
+                    Here are the descriptions or purposes of the attributes/columns used in user table:</br>
+
+<p><b><i>userid:</i></b> The column which are represents  id of the user which is unique value called PRIMARY KEY.  It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of user table.</p></br>
+
+
+<p><b><i>username:</i></b> The column which are represents name of the user.</p></br>
+
+<p><b><i>email:</i></b> The column which represents  the email of  the user.</p></br> 
+
+<p><b><i>gender:</i></b> The column which represents the gender of the user .</p></br>
+
+
+
+                    <b>Attributes of Property Table</b></br>
+
+                    Here are the descriptions or purposes of the attributes/columns used in property table:</br>
+
+
+<p><b><i>propertyid:</i></b> The column which are represents  id of property  which is unique value called PRIMARY KEY. It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of property table.</p></br>
+
+
+<p><b><i>address:</i></b> The column which represents address of  the property.</p></br>
+
+<p><b><i>type:</i></b> The column which represents  the type of  the property.</p></br>
+
+
+<p><b>price:</i></b> The column which represents  the price of the property.</p></br>
+
+
+                    <b>Attributes of Payments Table</b></br>
+
+    Here are the descriptions or purposes of the attributes/columns used in payments table:</br>
+
+
+<ol type="i"><li><p><b><i>paymentid:</i></b> The column which are represents  id of the payment  which is unique value called PRIMARY KEY. It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of payments table.</p></br></li>
+
+<li><p><b><i>transactionid:</i></b> The column which  represents  id of transaction which  is references to the transaction  table value called FOREIGN KEY.  It is a column of transaction table  which has relationship between payments  table.</p></br></li>
+
+<li><p><b><i>date:</i></b> The column which represents  the date of payments.</p></br></li>
+
+<li><p><b><i>amount:</i></b> The column which represents  the  amount of money paid.</p></br></li>
+
+<li><p><b><i>method:</i></b> The column which are represents  the method of payment either debit card or credit card.</p></br></li>
+</ol>
+ 
+
+
+
+        </ul>
+        <h2><u><li>JAVA</li></u></h2>
+        
+        <ul type="square"><h3><u><i><li>Description</li></i></u></h3>
+
+              <b>Introduction</b><br>
+ <p>Welcome to the Online Real Estate Commission Management System, designed and implemented using Java programming. This robust system serves as a comprehensive solution for managing real estate transactions, agent information, and client interactions in an efficient and organized manner.
+In this chapter I am going to explain how and tools I used for connecting my database and java programming for my project (Online_real_estate_Commission), The purpose of Java programming in this project is to provide a versatile and efficient platform for developing a robust application. Java ensures seamless connectivity to my database through JDBC, allowing for the effective management of real estate transactions, agent details, and client interactions. Utilizing tools like Eclipse, JDK, and the JDBC JAR file, Java simplifies the development process, offering a reliable and scalable solution for your real estate management needs..</p><br>
+ 
+    <b>Tools used to develop this system in java programming</b><br>
+
+<p><b>Eclipse IDE:</b> an integrated development environment used in computer programming. It contains a base workspace and an extensible plug-in system for customizing the environment. It is the second-most-popular IDE for Java development, and was the most popular. </p><br>
+
+<p><b>JAR stands for Java Archive:</b>  It's a file format based on the popular ZIP file format and is used for aggregating many files into one. Although JAR can be used as a general archiving tool, the primary motivation for its development was so that Java applets and their requisite components. </p><br>
+
+                          <h3><u><i><li>Forms and Images</li></i></u></h3>
+
+<b><h4>Agent Form</h4></b></br>
+<img src="Agent form.png" width=1000 height=300><br><br><br><br><br>
+
+<b><i><h4>User Form</h4></i></b></br>
+<img src="User form.png" width=1000 height=300><br><br><br><br><br>
+
+<b><i>Transaction FORM</i></b></br>
+<img src="Transaction form.png" width=1000 height=300><br><br><br><br><br>
+
+<b><i>Property FORM</i></b></br>
+<img src="Property form.png" width=1000 height=300><br><br><br><br><br>
+
+<b><i>PAYMENT FORM</i></b></br>
+<img src="Payment form.png" width=1000 height=300><br><br><br><br><br>
+
+
+
+    </ul>
+        
+    </ol>
+    <marquee><u><i><h2 style="color: white;">Prepared By</i></u>:   Louange ABIJURU</h2></marquee>
+    </body>
+    </html>
